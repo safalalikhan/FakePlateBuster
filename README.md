@@ -1,68 +1,84 @@
-# 🚘 FakePlateBuster  
-### _"No escape for number plate fakers."_
+# FakePlateBuster
 
-FakePlateBuster is an AI-powered prototype that detects **fraudulent or mismatched vehicle registrations** by comparing the **official (or mock) registry data** against **AI-analyzed image details**.  
+FakePlateBuster is a vehicle verification prototype for petrol stations, parking teams and security staff. It compares a vehicle photo with the record linked to its number plate.
 
-This project was inspired by a real incident in Hamilton, New Zealand — where a car used a **fake number plate** that passed standard checks, but didn’t match the car’s model and color.  
-FakePlateBuster uses a simple, smart approach to flag such suspicious cases automatically.
+**Status: Building phase — this is not a production-ready system.**
 
----
+## How it works
 
-## 🧩 Problem Statement
+1. Take or upload a photo of one vehicle.
+2. The vision service returns the plate, make, model, colour and vehicle type.
+3. The app uses the detected plate to look up the mock registry.
+4. It compares the detected vehicle details with the registry record.
+5. It shows the result, differences and a suggested next step.
 
-Traditional number plate verification systems only check **if a plate is flagged** (e.g., stolen, expired, blacklisted).  
-However, some offenders use **fake plates** that appear legitimate because they’re cloned from real vehicles.  
+If the plate is unreadable or incorrect, you can enter a correction. This changes the registry lookup while keeping the original image detection unchanged.
 
-**FakePlateBuster** adds an extra layer of intelligence:  
-👉 If the plate is valid but the **vehicle appearance (model, type, or color)** doesn’t match its record, the system flags it as **Suspicious**.
+## Verification logic
 
----
+Before comparing, the app normalizes case, spacing and variations such as `CR-V` / `CRV` and `Grey` / `Gray`.
 
-## 🎯 Objectives
+| Condition | Result |
+| --- | --- |
+| All required vehicle details match | Match |
+| One confirmed difference | Review Needed |
+| Two or more confirmed differences | Suspicious |
+| Missing or uncertain details, without two confirmed differences | Review Needed |
+| Plate is not in the mock registry | Unknown Plate |
+| Registry record is explicitly flagged | Flagged |
+| Vision service fails or does not support the photo | Analysis unavailable |
 
-- Detect fraudulent number plates using AI-powered image recognition.  
-- Compare the car’s **visual attributes** with the **registered attributes**.  
-- Flag mismatches as *Suspicious* for manual or automated review.  
-- Build the prototype using a stack that matches professional standards (.NET + React + AI).
+Unknown or low-confidence details are not counted as differences. Confirmed differences are retained even when other details are uncertain. The confidence threshold defaults to 70% and can be configured.
 
----
+An unreadable plate asks for a clearer photo or manual entry. An ambiguous photo asks for a clearer image of one vehicle. A plate-only check never returns Match.
 
-## ⚙️ System Architecture
+**Suspicious means the vehicle details differ from the record. It is not proof of a cloned plate or wrongdoing.**
 
-### **Workflow Overview**
+## Current demo
 
-1. User enters a **license plate number** and uploads a **vehicle image**.  
-2. Backend checks a **mock registry** (simulating NZTA data).  
-3. If not flagged:
-   - The image is analyzed by an **AI Vision API** (e.g., AWS Rekognition or Azure Vision).  
-4. The backend compares:
-   - **Registry Data:** expected make, model, color  
-   - **AI Data:** detected make, type, color  
-5. Returns a verdict:  
-   ✅ **Match** | ⚠️ **Suspicious** | 🚫 **Flagged**
+- Uses a fictional registry and 40 synthetic vehicle photos.
+- The default mock vision service matches image bytes using SHA-256, then returns the fixture's labelled plate and vehicle details. This is not real image recognition.
+- Registry lookup and image detection remain separate. Results are calculated from the comparison, not copied from test labels.
+- Choose **Try a sample vehicle**, load a sample, then select **Analyse vehicle**.
+- Unrecognised photos are unsupported in mock mode.
 
----
+All 40 mock cases pass: **10 Match, 20 Review Needed and 10 Suspicious**. This validates the workflow, not real AI accuracy. The synthetic image labels have not been independently validated.
 
-## 🧠 Tech Stack
+An optional AWS adapter supports OCR and vehicle labels. Exact model detection is limited, and colour detection is not yet implemented. There is no official vehicle registry connection.
 
-| Layer | Technology |
-|--------|-------------|
-| **Frontend** | React.js + Bootstrap 5 |
-| **Backend** | ASP.NET Core Web API (C#) |
-| **AI Vision** | AWS Rekognition / Azure Computer Vision (external API) |
-| **Mock Data Source** | Local JSON simulating NZTA vehicle registry |
-| **Database (Future)** | PostgreSQL / SQL Server |
-| **Version Control** | GitHub |
-| **Logging (Future)** | Serilog / OpenTelemetry |
-| **Deployment (Future)** | Azure / AWS / Render |
+## Run locally
 
----
+Requires .NET 8 and Node.js/npm.
 
-## 💾 Mock Vehicle Data Example
+Start the API from the project root:
 
-```json
-{
-  "ABC123": { "make": "Toyota", "model": "Corolla", "color": "Blue", "flagged": false },
-  "XYZ987": { "make": "Honda", "model": "Civic", "color": "White", "flagged": true },
-  "LMN456": { "make": "Mazda", "model": "CX-5", "color": "Red", "flagged": false }
-}
+```sh
+dotnet run --project backend/FakePlateBuster.Api
+```
+
+In a second terminal, start the frontend:
+
+```sh
+cd frontend
+npm install
+npm run dev
+```
+
+Open the frontend URL printed in the terminal. The API normally runs at `http://localhost:5088`.
+
+To use AWS, configure server-side AWS credentials, set `VISION_PROVIDER=AWS` and `AWS_REGION`, then restart the API. Credentials must not be placed in the frontend. AWS mode sends image content to AWS and never silently falls back to mock results.
+
+## Tests
+
+With the API running:
+
+```sh
+python3 tests/verify_dataset.py
+dotnet run --project tests/ComparisonChecks
+```
+
+## Still being built
+
+Real vehicle recognition, real-world accuracy testing, phone-browser testing and production security need further work. Uploaded photos are processed without being saved by the app; bundled demo images remain in the project.
+
+Built with **React + ASP.NET Core**. See [frontend setup](frontend/README.md) and [API details](backend/README.md) for additional configuration.

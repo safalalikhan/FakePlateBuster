@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "10000001_correct",
+    "input_plate": "10000001",
+    "visible_plate": "10000001",
+    "scenario": "correct",
+    "image": "images/correct/10000001_correct.png",
+    "expected": {
+      "plate": "10000001",
+      "make": "Suzuki",
+      "model": "Swift",
+      "colour": "Red",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "Swift",
+      "type": "hatchback",
+      "colour": "Red"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "2259f50e9994a0528eb1492d0c98709605f1f4d434d8d455003a207252241742"
+  },
+  {
+    "id": "10000001_wrong_model",
+    "input_plate": "10000001",
+    "visible_plate": "10000001",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000001_wrong_model.png",
+    "expected": {
+      "plate": "10000001",
+      "make": "Suzuki",
+      "model": "Swift",
+      "colour": "Red",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "Baleno",
+      "type": "hatchback",
+      "colour": "Red"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "0053c338fe12098264477ca0314aaf4631fcea561af0243d0b55a3ad73dabc90"
+  },
+  {
+    "id": "10000001_wrong_colour",
+    "input_plate": "10000001",
+    "visible_plate": "10000001",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000001_wrong_colour.png",
+    "expected": {
+      "plate": "10000001",
+      "make": "Suzuki",
+      "model": "Swift",
+      "colour": "Red",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "Swift",
+      "type": "hatchback",
+      "colour": "Yellow"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "fd0f40aa06704f628d844d5cfe06897cc3a01cb0e77ebe974ad785d6c299b5e0"
+  },
+  {
+    "id": "10000001_wrong_model_and_colour",
+    "input_plate": "10000001",
+    "visible_plate": "10000001",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000001_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000001",
+      "make": "Suzuki",
+      "model": "Swift",
+      "colour": "Red",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "Baleno",
+      "type": "hatchback",
+      "colour": "Yellow"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "e4687abb9205c5f2b04db0ef764904dcab3fd4d1a292ac2ac42dc6a47837bc8f"
+  },
+  {
+    "id": "10000002_correct",
+    "input_plate": "10000002",
+    "visible_plate": "10000002",
+    "scenario": "correct",
+    "image": "images/correct/10000002_correct.png",
+    "expected": {
+      "plate": "10000002",
+      "make": "Suzuki",
+      "model": "Vitara",
+      "colour": "White",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "Vitara",
+      "type": "SUV",
+      "colour": "White"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "21cc78abe5bf95fd0b73d0b2f95f006318ee9177945a4fba818451aa9d909189"
+  },
+  {
+    "id": "10000002_wrong_model",
+    "input_plate": "10000002",
+    "visible_plate": "10000002",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000002_wrong_model.png",
+    "expected": {
+      "plate": "10000002",
+      "make": "Suzuki",
+      "model": "Vitara",
+      "colour": "White",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "S-Cross",
+      "type": "SUV",
+      "colour": "White"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "448fdc6bf6afa610b395b8e2bc729ef07c1e29d6e2b3fb897f0fad88dd2b2fad"
+  },
+  {
+    "id": "10000002_wrong_colour",
+    "input_plate": "10000002",
+    "visible_plate": "10000002",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000002_wrong_colour.png",
+    "expected": {
+      "plate": "10000002",
+      "make": "Suzuki",
+      "model": "Vitara",
+      "colour": "White",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "Vitara",
+      "type": "SUV",
+      "colour": "Black"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "df2bedfa60b3b43325ceb388ce95b9439474548684f0e9f4547faefe5074f161"
+  },
+  {
+    "id": "10000002_wrong_model_and_colour",
+    "input_plate": "10000002",
+    "visible_plate": "10000002",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000002_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000002",
+      "make": "Suzuki",
+      "model": "Vitara",
+      "colour": "White",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Suzuki",
+      "model": "S-Cross",
+      "type": "SUV",
+      "colour": "Black"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "b531befa6ee54625c809d66bef08c17e45ce9154aabb40a94e3e4689cd19cdcd"
+  },
+  {
+    "id": "10000003_correct",
+    "input_plate": "10000003",
+    "visible_plate": "10000003",
+    "scenario": "correct",
+    "image": "images/correct/10000003_correct.png",
+    "expected": {
+      "plate": "10000003",
+      "make": "Toyota",
+      "model": "Corolla",
+      "colour": "Silver",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "Corolla",
+      "type": "hatchback",
+      "colour": "Silver"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "6e72311db8b2e66d5e939c6249c8fd5686779baf04ae4a5ab7e51864e5c93c30"
+  },
+  {
+    "id": "10000003_wrong_model",
+    "input_plate": "10000003",
+    "visible_plate": "10000003",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000003_wrong_model.png",
+    "expected": {
+      "plate": "10000003",
+      "make": "Toyota",
+      "model": "Corolla",
+      "colour": "Silver",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "Prius",
+      "type": "hatchback",
+      "colour": "Silver"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "d49c641ae0d6e6966322165cf5b10764334693de8bab60dd45b5d9ec537f5e40"
+  },
+  {
+    "id": "10000003_wrong_colour",
+    "input_plate": "10000003",
+    "visible_plate": "10000003",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000003_wrong_colour.png",
+    "expected": {
+      "plate": "10000003",
+      "make": "Toyota",
+      "model": "Corolla",
+      "colour": "Silver",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "Corolla",
+      "type": "hatchback",
+      "colour": "Red"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "0d02b678517875b89a4c38bad0b592041c8cd145908fd02566a9b04a608ff5d7"
+  },
+  {
+    "id": "10000003_wrong_model_and_colour",
+    "input_plate": "10000003",
+    "visible_plate": "10000003",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000003_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000003",
+      "make": "Toyota",
+      "model": "Corolla",
+      "colour": "Silver",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "Prius",
+      "type": "hatchback",
+      "colour": "Red"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "fcd2350ace09775bbf56cb73343f0e554f0e02a16caab1fd8b119f93b62feeec"
+  },
+  {
+    "id": "10000004_correct",
+    "input_plate": "10000004",
+    "visible_plate": "10000004",
+    "scenario": "correct",
+    "image": "images/correct/10000004_correct.png",
+    "expected": {
+      "plate": "10000004",
+      "make": "Toyota",
+      "model": "RAV4",
+      "colour": "Blue",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "RAV4",
+      "type": "SUV",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "dbdb6e5db4ca49bfb33bad5b275e05ed1aaaee78a6e31df9e4dcad78c73d4831"
+  },
+  {
+    "id": "10000004_wrong_model",
+    "input_plate": "10000004",
+    "visible_plate": "10000004",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000004_wrong_model.png",
+    "expected": {
+      "plate": "10000004",
+      "make": "Toyota",
+      "model": "RAV4",
+      "colour": "Blue",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "Highlander",
+      "type": "SUV",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "e74927bb3ac5e58e6ca6b73a60eda8075d287d0ec76ff16ab9373f66f2321726"
+  },
+  {
+    "id": "10000004_wrong_colour",
+    "input_plate": "10000004",
+    "visible_plate": "10000004",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000004_wrong_colour.png",
+    "expected": {
+      "plate": "10000004",
+      "make": "Toyota",
+      "model": "RAV4",
+      "colour": "Blue",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "RAV4",
+      "type": "SUV",
+      "colour": "White"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "d934361b519b36cc091789c37b29a402cf89ad90281e72da1d680ed440daabea"
+  },
+  {
+    "id": "10000004_wrong_model_and_colour",
+    "input_plate": "10000004",
+    "visible_plate": "10000004",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000004_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000004",
+      "make": "Toyota",
+      "model": "RAV4",
+      "colour": "Blue",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Toyota",
+      "model": "Highlander",
+      "type": "SUV",
+      "colour": "White"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "d892b4f111655f357c69f516e25e42d70a440e77f54562053ce0749b6bd581a3"
+  },
+  {
+    "id": "10000005_correct",
+    "input_plate": "10000005",
+    "visible_plate": "10000005",
+    "scenario": "correct",
+    "image": "images/correct/10000005_correct.png",
+    "expected": {
+      "plate": "10000005",
+      "make": "Mazda",
+      "model": "Mazda3",
+      "colour": "Black",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "type": "hatchback",
+      "colour": "Black"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "9d0d8de0a75fc7cff52afc85b0dead4c8c757c18d32d4153e2a2f3e62d798d52"
+  },
+  {
+    "id": "10000005_wrong_model",
+    "input_plate": "10000005",
+    "visible_plate": "10000005",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000005_wrong_model.png",
+    "expected": {
+      "plate": "10000005",
+      "make": "Mazda",
+      "model": "Mazda3",
+      "colour": "Black",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "Mazda2",
+      "type": "hatchback",
+      "colour": "Black"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "05ea287a040acb32ebce93e68a25c76139c26446ba98b09ec201195e47b18b9c"
+  },
+  {
+    "id": "10000005_wrong_colour",
+    "input_plate": "10000005",
+    "visible_plate": "10000005",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000005_wrong_colour.png",
+    "expected": {
+      "plate": "10000005",
+      "make": "Mazda",
+      "model": "Mazda3",
+      "colour": "Black",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "Mazda3",
+      "type": "hatchback",
+      "colour": "Yellow"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "b6de4c1776dfb04c19997c258b89b67368f6ce16b43fdd59c848b3590c0b1e71"
+  },
+  {
+    "id": "10000005_wrong_model_and_colour",
+    "input_plate": "10000005",
+    "visible_plate": "10000005",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000005_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000005",
+      "make": "Mazda",
+      "model": "Mazda3",
+      "colour": "Black",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "Mazda2",
+      "type": "hatchback",
+      "colour": "Yellow"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "70727b62c2dceceb45e46f997e9d9362127504e6d8886fd3938856d1cb6d4a37"
+  },
+  {
+    "id": "10000006_correct",
+    "input_plate": "10000006",
+    "visible_plate": "10000006",
+    "scenario": "correct",
+    "image": "images/correct/10000006_correct.png",
+    "expected": {
+      "plate": "10000006",
+      "make": "Mazda",
+      "model": "CX-5",
+      "colour": "Red",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "CX-5",
+      "type": "SUV",
+      "colour": "Red"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "78adc92cfe37375153e4a799c1608b9afe55fed45e79d925a6b6b16c5b085e42"
+  },
+  {
+    "id": "10000006_wrong_model",
+    "input_plate": "10000006",
+    "visible_plate": "10000006",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000006_wrong_model.png",
+    "expected": {
+      "plate": "10000006",
+      "make": "Mazda",
+      "model": "CX-5",
+      "colour": "Red",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "CX-9",
+      "type": "SUV",
+      "colour": "Red"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "c21ae14635314f06bf83c4ed6870594858025cb2a0e3b5cae848c95f6bad7f02"
+  },
+  {
+    "id": "10000006_wrong_colour",
+    "input_plate": "10000006",
+    "visible_plate": "10000006",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000006_wrong_colour.png",
+    "expected": {
+      "plate": "10000006",
+      "make": "Mazda",
+      "model": "CX-5",
+      "colour": "Red",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "CX-5",
+      "type": "SUV",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "09509ec8d250635aebd16678603989acf9ec480dedf4597188d5361b24747e11"
+  },
+  {
+    "id": "10000006_wrong_model_and_colour",
+    "input_plate": "10000006",
+    "visible_plate": "10000006",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000006_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000006",
+      "make": "Mazda",
+      "model": "CX-5",
+      "colour": "Red",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Mazda",
+      "model": "CX-9",
+      "type": "SUV",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "b8ddd4a5748531b6c6a94b6386ed81107c847ae944ca4fa69088b88142cde1a6"
+  },
+  {
+    "id": "10000007_correct",
+    "input_plate": "10000007",
+    "visible_plate": "10000007",
+    "scenario": "correct",
+    "image": "images/correct/10000007_correct.png",
+    "expected": {
+      "plate": "10000007",
+      "make": "Honda",
+      "model": "Civic",
+      "colour": "White",
+      "type": "sedan",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "Civic",
+      "type": "sedan",
+      "colour": "White"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "89a9ddb78748c5c8ad5402c4e0575843c43395f5a7cced8107a7727eef132764"
+  },
+  {
+    "id": "10000007_wrong_model",
+    "input_plate": "10000007",
+    "visible_plate": "10000007",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000007_wrong_model.png",
+    "expected": {
+      "plate": "10000007",
+      "make": "Honda",
+      "model": "Civic",
+      "colour": "White",
+      "type": "sedan",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "Accord",
+      "type": "sedan",
+      "colour": "White"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "8ba07781e18783b63bb86d1ab0d837b9fecac7be9e868a51d80ba9b8deceec2e"
+  },
+  {
+    "id": "10000007_wrong_colour",
+    "input_plate": "10000007",
+    "visible_plate": "10000007",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000007_wrong_colour.png",
+    "expected": {
+      "plate": "10000007",
+      "make": "Honda",
+      "model": "Civic",
+      "colour": "White",
+      "type": "sedan",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "Civic",
+      "type": "sedan",
+      "colour": "Black"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "f541dc3d4ff51c24465b218296a0d98ff20d88f7a6caaf83747f2363e6eb92c9"
+  },
+  {
+    "id": "10000007_wrong_model_and_colour",
+    "input_plate": "10000007",
+    "visible_plate": "10000007",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000007_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000007",
+      "make": "Honda",
+      "model": "Civic",
+      "colour": "White",
+      "type": "sedan",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "Accord",
+      "type": "sedan",
+      "colour": "Black"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "268ae1eeb21c0052ebc7f959ac551c070a7f1b0d1ec2c5dc760fbf11480470e0"
+  },
+  {
+    "id": "10000008_correct",
+    "input_plate": "10000008",
+    "visible_plate": "10000008",
+    "scenario": "correct",
+    "image": "images/correct/10000008_correct.png",
+    "expected": {
+      "plate": "10000008",
+      "make": "Honda",
+      "model": "CR-V",
+      "colour": "Grey",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "CR-V",
+      "type": "SUV",
+      "colour": "Grey"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "2a7628e30aa905d194152b3824da4521af36b1bb5654dca4fb014195296e891d"
+  },
+  {
+    "id": "10000008_wrong_model",
+    "input_plate": "10000008",
+    "visible_plate": "10000008",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000008_wrong_model.png",
+    "expected": {
+      "plate": "10000008",
+      "make": "Honda",
+      "model": "CR-V",
+      "colour": "Grey",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "HR-V",
+      "type": "SUV",
+      "colour": "Grey"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "92ec68a17caf6f89fa3251f84e35341a7075cb2c14317dfcabc4734b6aec0b17"
+  },
+  {
+    "id": "10000008_wrong_colour",
+    "input_plate": "10000008",
+    "visible_plate": "10000008",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000008_wrong_colour.png",
+    "expected": {
+      "plate": "10000008",
+      "make": "Honda",
+      "model": "CR-V",
+      "colour": "Grey",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "CR-V",
+      "type": "SUV",
+      "colour": "Red"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "628fc9b369d5ba6ae4dac0a779d33f3d49046eefa8d25a07c079aaff59b1d4f0"
+  },
+  {
+    "id": "10000008_wrong_model_and_colour",
+    "input_plate": "10000008",
+    "visible_plate": "10000008",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000008_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000008",
+      "make": "Honda",
+      "model": "CR-V",
+      "colour": "Grey",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Honda",
+      "model": "HR-V",
+      "type": "SUV",
+      "colour": "Red"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "623dd06e8faf83b375160effe288198a69ff631d312a1036e3f62e81ff3b5339"
+  },
+  {
+    "id": "10000009_correct",
+    "input_plate": "10000009",
+    "visible_plate": "10000009",
+    "scenario": "correct",
+    "image": "images/correct/10000009_correct.png",
+    "expected": {
+      "plate": "10000009",
+      "make": "Nissan",
+      "model": "Leaf",
+      "colour": "Blue",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "Leaf",
+      "type": "hatchback",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "88e3ea716f8dbbc66e1444feda329ba6fae8852cdf3fe0717f88016f344c9e36"
+  },
+  {
+    "id": "10000009_wrong_model",
+    "input_plate": "10000009",
+    "visible_plate": "10000009",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000009_wrong_model.png",
+    "expected": {
+      "plate": "10000009",
+      "make": "Nissan",
+      "model": "Leaf",
+      "colour": "Blue",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "Note",
+      "type": "hatchback",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "9a5bf0c52eebe65f74001de76439d9bedf3b9f170d0b5fcfa11466d351dbaf12"
+  },
+  {
+    "id": "10000009_wrong_colour",
+    "input_plate": "10000009",
+    "visible_plate": "10000009",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000009_wrong_colour.png",
+    "expected": {
+      "plate": "10000009",
+      "make": "Nissan",
+      "model": "Leaf",
+      "colour": "Blue",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "Leaf",
+      "type": "hatchback",
+      "colour": "White"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "e86efb5ff119938e4e48d1c90085edd9172259511d9ea67e53b23b72ce8e1552"
+  },
+  {
+    "id": "10000009_wrong_model_and_colour",
+    "input_plate": "10000009",
+    "visible_plate": "10000009",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000009_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000009",
+      "make": "Nissan",
+      "model": "Leaf",
+      "colour": "Blue",
+      "type": "hatchback",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "Note",
+      "type": "hatchback",
+      "colour": "White"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "6a155c2294a39a47d903af96693c9b13c0b4afcc955079b38c2c3ae270a2549b"
+  },
+  {
+    "id": "10000010_correct",
+    "input_plate": "10000010",
+    "visible_plate": "10000010",
+    "scenario": "correct",
+    "image": "images/correct/10000010_correct.png",
+    "expected": {
+      "plate": "10000010",
+      "make": "Nissan",
+      "model": "X-Trail",
+      "colour": "Silver",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "X-Trail",
+      "type": "SUV",
+      "colour": "Silver"
+    },
+    "expected_mismatches": [],
+    "expected_status": "Match",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "9f6fb46761ea8c5da48ea5587863b2f1a898906782296006177e7ddf045dafff"
+  },
+  {
+    "id": "10000010_wrong_model",
+    "input_plate": "10000010",
+    "visible_plate": "10000010",
+    "scenario": "wrong_model",
+    "image": "images/wrong_model/10000010_wrong_model.png",
+    "expected": {
+      "plate": "10000010",
+      "make": "Nissan",
+      "model": "X-Trail",
+      "colour": "Silver",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "Qashqai",
+      "type": "SUV",
+      "colour": "Silver"
+    },
+    "expected_mismatches": [
+      "model"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "e2e992483350fb0df1c411a5b824c7b0c676ec8beaf0d36675a26f7600853327"
+  },
+  {
+    "id": "10000010_wrong_colour",
+    "input_plate": "10000010",
+    "visible_plate": "10000010",
+    "scenario": "wrong_colour",
+    "image": "images/wrong_colour/10000010_wrong_colour.png",
+    "expected": {
+      "plate": "10000010",
+      "make": "Nissan",
+      "model": "X-Trail",
+      "colour": "Silver",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "X-Trail",
+      "type": "SUV",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [
+      "colour"
+    ],
+    "expected_status": "Review Needed",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "54427a8247fd2e7e1b35ea4a5b834d864e413b8aa7c482b56ed292c6acbeb52b"
+  },
+  {
+    "id": "10000010_wrong_model_and_colour",
+    "input_plate": "10000010",
+    "visible_plate": "10000010",
+    "scenario": "wrong_model_and_colour",
+    "image": "images/wrong_model_and_colour/10000010_wrong_model_and_colour.png",
+    "expected": {
+      "plate": "10000010",
+      "make": "Nissan",
+      "model": "X-Trail",
+      "colour": "Silver",
+      "type": "SUV",
+      "flagged": false,
+      "source": "synthetic_mock"
+    },
+    "image_ground_truth": {
+      "make": "Nissan",
+      "model": "Qashqai",
+      "type": "SUV",
+      "colour": "Blue"
+    },
+    "expected_mismatches": [
+      "model",
+      "colour"
+    ],
+    "expected_status": "Suspicious",
+    "label_basis": "generation_specification",
+    "vision_validated": false,
+    "sha256": "eb5ba70765ebe70931747c1ff35eca0e3ce9399d1b7b9417784c7257257ad6b2"
+  }
+]

@@ -416,3 +416,9 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Frontend output and local machine state
+dist/
+.DS_Store
+.env.*
+!.env.example

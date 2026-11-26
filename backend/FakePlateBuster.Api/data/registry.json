@@ -1,0 +1,23 @@
+{
+  "ABC123": {
+    "make": "Toyota",
+    "model": "Corolla",
+    "color": "Blue",
+    "flagged": false,
+    "type": "Sedan"
+  },
+  "XYZ987": {
+    "make": "Honda",
+    "model": "Civic",
+    "color": "White",
+    "flagged": true,
+    "type": "Sedan"
+  },
+  "LMN456": {
+    "make": "Mazda",
+    "model": "CX-5",
+    "color": "Red",
+    "flagged": false,
+    "type": "SUV"
+  }
+}

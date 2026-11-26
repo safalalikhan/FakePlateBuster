@@ -1,0 +1,11 @@
+plate,make,model,colour,type,flagged,source
+10000001,Suzuki,Swift,Red,hatchback,False,synthetic_mock
+10000002,Suzuki,Vitara,White,SUV,False,synthetic_mock
+10000003,Toyota,Corolla,Silver,hatchback,False,synthetic_mock
+10000004,Toyota,RAV4,Blue,SUV,False,synthetic_mock
+10000005,Mazda,Mazda3,Black,hatchback,False,synthetic_mock
+10000006,Mazda,CX-5,Red,SUV,False,synthetic_mock
+10000007,Honda,Civic,White,sedan,False,synthetic_mock
+10000008,Honda,CR-V,Grey,SUV,False,synthetic_mock
+10000009,Nissan,Leaf,Blue,hatchback,False,synthetic_mock
+10000010,Nissan,X-Trail,Silver,SUV,False,synthetic_mock

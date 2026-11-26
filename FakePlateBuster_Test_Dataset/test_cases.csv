@@ -1,0 +1,41 @@
+id,input_plate,visible_plate,scenario,image,actual_make,actual_model,actual_type,actual_colour,expected_mismatches,expected_status,vision_validated
+10000001_correct,10000001,10000001,correct,images/correct/10000001_correct.png,Suzuki,Swift,hatchback,Red,,Match,False
+10000001_wrong_model,10000001,10000001,wrong_model,images/wrong_model/10000001_wrong_model.png,Suzuki,Baleno,hatchback,Red,model,Review Needed,False
+10000001_wrong_colour,10000001,10000001,wrong_colour,images/wrong_colour/10000001_wrong_colour.png,Suzuki,Swift,hatchback,Yellow,colour,Review Needed,False
+10000001_wrong_model_and_colour,10000001,10000001,wrong_model_and_colour,images/wrong_model_and_colour/10000001_wrong_model_and_colour.png,Suzuki,Baleno,hatchback,Yellow,model;colour,Suspicious,False
+10000002_correct,10000002,10000002,correct,images/correct/10000002_correct.png,Suzuki,Vitara,SUV,White,,Match,False
+10000002_wrong_model,10000002,10000002,wrong_model,images/wrong_model/10000002_wrong_model.png,Suzuki,S-Cross,SUV,White,model,Review Needed,False
+10000002_wrong_colour,10000002,10000002,wrong_colour,images/wrong_colour/10000002_wrong_colour.png,Suzuki,Vitara,SUV,Black,colour,Review Needed,False
+10000002_wrong_model_and_colour,10000002,10000002,wrong_model_and_colour,images/wrong_model_and_colour/10000002_wrong_model_and_colour.png,Suzuki,S-Cross,SUV,Black,model;colour,Suspicious,False
+10000003_correct,10000003,10000003,correct,images/correct/10000003_correct.png,Toyota,Corolla,hatchback,Silver,,Match,False
+10000003_wrong_model,10000003,10000003,wrong_model,images/wrong_model/10000003_wrong_model.png,Toyota,Prius,hatchback,Silver,model,Review Needed,False
+10000003_wrong_colour,10000003,10000003,wrong_colour,images/wrong_colour/10000003_wrong_colour.png,Toyota,Corolla,hatchback,Red,colour,Review Needed,False
+10000003_wrong_model_and_colour,10000003,10000003,wrong_model_and_colour,images/wrong_model_and_colour/10000003_wrong_model_and_colour.png,Toyota,Prius,hatchback,Red,model;colour,Suspicious,False
+10000004_correct,10000004,10000004,correct,images/correct/10000004_correct.png,Toyota,RAV4,SUV,Blue,,Match,False
+10000004_wrong_model,10000004,10000004,wrong_model,images/wrong_model/10000004_wrong_model.png,Toyota,Highlander,SUV,Blue,model,Review Needed,False
+10000004_wrong_colour,10000004,10000004,wrong_colour,images/wrong_colour/10000004_wrong_colour.png,Toyota,RAV4,SUV,White,colour,Review Needed,False
+10000004_wrong_model_and_colour,10000004,10000004,wrong_model_and_colour,images/wrong_model_and_colour/10000004_wrong_model_and_colour.png,Toyota,Highlander,SUV,White,model;colour,Suspicious,False
+10000005_correct,10000005,10000005,correct,images/correct/10000005_correct.png,Mazda,Mazda3,hatchback,Black,,Match,False
+10000005_wrong_model,10000005,10000005,wrong_model,images/wrong_model/10000005_wrong_model.png,Mazda,Mazda2,hatchback,Black,model,Review Needed,False
+10000005_wrong_colour,10000005,10000005,wrong_colour,images/wrong_colour/10000005_wrong_colour.png,Mazda,Mazda3,hatchback,Yellow,colour,Review Needed,False
+10000005_wrong_model_and_colour,10000005,10000005,wrong_model_and_colour,images/wrong_model_and_colour/10000005_wrong_model_and_colour.png,Mazda,Mazda2,hatchback,Yellow,model;colour,Suspicious,False
+10000006_correct,10000006,10000006,correct,images/correct/10000006_correct.png,Mazda,CX-5,SUV,Red,,Match,False
+10000006_wrong_model,10000006,10000006,wrong_model,images/wrong_model/10000006_wrong_model.png,Mazda,CX-9,SUV,Red,model,Review Needed,False
+10000006_wrong_colour,10000006,10000006,wrong_colour,images/wrong_colour/10000006_wrong_colour.png,Mazda,CX-5,SUV,Blue,colour,Review Needed,False
+10000006_wrong_model_and_colour,10000006,10000006,wrong_model_and_colour,images/wrong_model_and_colour/10000006_wrong_model_and_colour.png,Mazda,CX-9,SUV,Blue,model;colour,Suspicious,False
+10000007_correct,10000007,10000007,correct,images/correct/10000007_correct.png,Honda,Civic,sedan,White,,Match,False
+10000007_wrong_model,10000007,10000007,wrong_model,images/wrong_model/10000007_wrong_model.png,Honda,Accord,sedan,White,model,Review Needed,False
+10000007_wrong_colour,10000007,10000007,wrong_colour,images/wrong_colour/10000007_wrong_colour.png,Honda,Civic,sedan,Black,colour,Review Needed,False
+10000007_wrong_model_and_colour,10000007,10000007,wrong_model_and_colour,images/wrong_model_and_colour/10000007_wrong_model_and_colour.png,Honda,Accord,sedan,Black,model;colour,Suspicious,False
+10000008_correct,10000008,10000008,correct,images/correct/10000008_correct.png,Honda,CR-V,SUV,Grey,,Match,False
+10000008_wrong_model,10000008,10000008,wrong_model,images/wrong_model/10000008_wrong_model.png,Honda,HR-V,SUV,Grey,model,Review Needed,False
+10000008_wrong_colour,10000008,10000008,wrong_colour,images/wrong_colour/10000008_wrong_colour.png,Honda,CR-V,SUV,Red,colour,Review Needed,False
+10000008_wrong_model_and_colour,10000008,10000008,wrong_model_and_colour,images/wrong_model_and_colour/10000008_wrong_model_and_colour.png,Honda,HR-V,SUV,Red,model;colour,Suspicious,False
+10000009_correct,10000009,10000009,correct,images/correct/10000009_correct.png,Nissan,Leaf,hatchback,Blue,,Match,False
+10000009_wrong_model,10000009,10000009,wrong_model,images/wrong_model/10000009_wrong_model.png,Nissan,Note,hatchback,Blue,model,Review Needed,False
+10000009_wrong_colour,10000009,10000009,wrong_colour,images/wrong_colour/10000009_wrong_colour.png,Nissan,Leaf,hatchback,White,colour,Review Needed,False
+10000009_wrong_model_and_colour,10000009,10000009,wrong_model_and_colour,images/wrong_model_and_colour/10000009_wrong_model_and_colour.png,Nissan,Note,hatchback,White,model;colour,Suspicious,False
+10000010_correct,10000010,10000010,correct,images/correct/10000010_correct.png,Nissan,X-Trail,SUV,Silver,,Match,False
+10000010_wrong_model,10000010,10000010,wrong_model,images/wrong_model/10000010_wrong_model.png,Nissan,Qashqai,SUV,Silver,model,Review Needed,False
+10000010_wrong_colour,10000010,10000010,wrong_colour,images/wrong_colour/10000010_wrong_colour.png,Nissan,X-Trail,SUV,Blue,colour,Review Needed,False
+10000010_wrong_model_and_colour,10000010,10000010,wrong_model_and_colour,images/wrong_model_and_colour/10000010_wrong_model_and_colour.png,Nissan,Qashqai,SUV,Blue,model;colour,Suspicious,False

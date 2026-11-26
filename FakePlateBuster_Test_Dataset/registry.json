@@ -1,0 +1,92 @@
+[
+  {
+    "plate": "10000001",
+    "make": "Suzuki",
+    "model": "Swift",
+    "colour": "Red",
+    "type": "hatchback",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000002",
+    "make": "Suzuki",
+    "model": "Vitara",
+    "colour": "White",
+    "type": "SUV",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000003",
+    "make": "Toyota",
+    "model": "Corolla",
+    "colour": "Silver",
+    "type": "hatchback",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000004",
+    "make": "Toyota",
+    "model": "RAV4",
+    "colour": "Blue",
+    "type": "SUV",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000005",
+    "make": "Mazda",
+    "model": "Mazda3",
+    "colour": "Black",
+    "type": "hatchback",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000006",
+    "make": "Mazda",
+    "model": "CX-5",
+    "colour": "Red",
+    "type": "SUV",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000007",
+    "make": "Honda",
+    "model": "Civic",
+    "colour": "White",
+    "type": "sedan",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000008",
+    "make": "Honda",
+    "model": "CR-V",
+    "colour": "Grey",
+    "type": "SUV",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000009",
+    "make": "Nissan",
+    "model": "Leaf",
+    "colour": "Blue",
+    "type": "hatchback",
+    "flagged": false,
+    "source": "synthetic_mock"
+  },
+  {
+    "plate": "10000010",
+    "make": "Nissan",
+    "model": "X-Trail",
+    "colour": "Silver",
+    "type": "SUV",
+    "flagged": false,
+    "source": "synthetic_mock"
+  }
+]
